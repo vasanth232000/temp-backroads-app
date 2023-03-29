@@ -16,6 +16,9 @@ const Table = () => {
 
     const handleDelete = (index,e) =>{
         setCount(count.filter((i) => i.id !== index))
+        let changeLocal = updatedTable.filter((i) => i.id !== index);
+        changeLocal = JSON.stringify(changeLocal);
+        localStorage.setItem("newtable",changeLocal);
     }
 
      useEffect(() => {
