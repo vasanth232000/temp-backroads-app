@@ -1,33 +1,33 @@
 import React from 'react'
-import { pageLinks,socialLinks} from '../data';
+import { pageLinks, socialLinks } from '../data';
 
 const Footer = () => {
   return (
     <>
-    <footer className="section footer">
-      <ul className="footer-links">
-          {pageLinks.map((pageLink)=>{
-            const {id,href,text} = pageLink;
-            return<li key={id}>
-            <a href={href}  className="footer-link">{text}</a>
-          </li>
+      <footer className="section footer">
+        <ul className="footer-links">
+          {pageLinks.map((pageLink) => {
+            const { id, href, text } = pageLink;
+            return <li key={id}>
+              <a href={href} className="footer-link">{text}</a>
+            </li>
           })}
-      </ul>
-      <ul className="footer-icons">
-          {socialLinks.map((socialLink)=>{
-            const {href,icon,id} = socialLink;
-            return<li key={id}>
-            <a href={href} target="_blank"  rel="noreferrer" className="footer-icon"
+        </ul>
+        <ul className="footer-icons">
+          {socialLinks.map((socialLink) => {
+            const { href, icon, id } = socialLink;
+            return (<li key={id}>
+              <a href={href} target="_blank" rel="noreferrer" className="footer-icon"
               ><i className={icon}></i
-            ></a>
-          </li>
+              ></a>
+            </li>)
           })}
-      </ul>
-      <p className="copyright">
-        copyright &copy; Backroads travel tours company
-        <span id="date">{new Date().getFullYear()}</span> all rights reserved
-      </p>
-    </footer>
+        </ul>
+        <p className="copyright">
+          copyright &copy; Backroads travel tours company
+          <span id="date">{new Date().getFullYear()}</span> all rights reserved
+        </p>
+      </footer>
     </>
   )
 }
