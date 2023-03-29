@@ -20,25 +20,29 @@ function Joke() {
         apiBuild()
     }, []);  
 
-    const apiData = joke.map((item,index)=>{
-        return  <tr key={index}>
-        <th>{item.word}</th>
-        <th>{item.score}</th>
-      </tr>
+    const apiData = joke.slice(0,5).map((item,index)=>{
+        return  (
+                <table key={index} value={index}>
+                    <tbody>
+                        <tr><td>{item.word}</td>
+                        <td>{item.score}</td>
+                        {item.tags.map((item,index)=>{
+                        return (
+                            <td key={index}>{item}</td>
+                        )
+                    })}</tr>
+                    </tbody>
+                </table>
+        )
     })
+
  
 
-    // let apilength = joke.length;
 
     return (
-        <>
-        <table>
-            <tbody>
+        <div className="section-center">
             {apiData}
-            </tbody>
-            </table>
-        
-        </>
+        </div>
     );
 }
 

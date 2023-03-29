@@ -26,3 +26,11 @@ export const tourData = [{id:1,img:img1,date:"August 26th, 2020",title:"Tibet Ad
 {id:2,img:img2,date:"October 1th, 2020",title:"Best Of Java",text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",country:"Indonesia",logo:"fas fa-map",days:"11 Days",rate:"$1400"},
 {id:3,img:img3,date:"September 15th, 2020",title:"Explore Hong Kong",text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",country:"Hong Kong",logo:"fas fa-map",days:"11 Days",rate:"$5000"},
 {id:4,img:img4,date:"December 5th, 2019",title:"Kenya Highlights",text:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",country:"Kenya",logo:"fas fa-map",days:"20 Days",rate:"$3300"}]
+
+
+export const tableData = [{id:0,name:"Vasanth",age:22,gender:"male",desg:"ui developer"},
+{id:1,name:"Vignesh",age:22,gender:"male",desg:"ui developer"},
+{id:2,name:"Hari",age:22,gender:"male",desg:"ui developer"},
+{id:3,name:"Arun",age:24,gender:"male",desg:"ui developer"},
+{id:4,name:"Arujun",age:22,gender:"male",desg:"ui developer"}
+]

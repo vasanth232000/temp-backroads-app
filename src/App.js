@@ -6,6 +6,7 @@ import Tours from "./components/Tours";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Joke from "./components/Joke"
+import Table from "./components/Table";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Services/>
     <Tours/>
     <Joke/>
+    <Table/>
     <Footer/>
     <Navigation/>
 </>
